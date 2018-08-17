@@ -1,3 +1,3 @@
-This code uses CCXT here :
+This code uses CCXT library :
 
 https://github.com/ccxt/ccxt
