@@ -3,9 +3,12 @@ ob_start();
 ignore_user_abort(true);
 set_time_limit(0);
 
-require(dirname(__FILE__).'/lib.php');
+define('DIR', dirname(__FILE__));
 
-$root = dirname (__FILE__).'/../ccxt-master';
+require(DIR.'/lib.php');
+
+// This is directory of ccxt-master
+$root = DIR.'/../ccxt-master';
 require_once($root . '/ccxt.php');
 
 $exchange = new \ccxt\bitmex (array (
