@@ -1,6 +1,11 @@
 <?php
+if (!defined('DIR')) {
+	echo 'Forbidden';
+	exit();
+}
+
 if (!defined('MY_POSITION_ORDER_ID_FILE')) {
-	define('MY_POSITION_ORDER_ID_FILE', dirname(__FILE__).'/order_id/position.txt');
+	define('MY_POSITION_ORDER_ID_FILE', dirname(__FILE__).'/../order_data/position_order_id.txt');
 }
 
 date_default_timezone_set('UTC');

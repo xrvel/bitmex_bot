@@ -1,4 +1,9 @@
 <?php
+if (!defined('DIR')) {
+	echo 'Forbidden';
+	exit();
+}
+
 if (!defined('MY_ORDER_QUANTITY')) {
 	define('MY_ORDER_QUANTITY', 1);
 }
